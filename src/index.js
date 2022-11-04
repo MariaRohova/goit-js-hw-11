@@ -66,13 +66,12 @@ async function loadMore() {
   loadMoreRef.classList.add('is-hidden');
   try {
     const imgList = await getImage(searchName);
-    // console.log(imgList);
     markUpServise.makeCardMarkup(imgList.hits);
     loadMoreRef.classList.remove('is-hidden');
     simpleLightbox.refresh();
       totalImages += imgList.hits.length;
-      console.log('totalImages', totalImages);
-      console.log('imgList.totalHits', imgList.totalHits);
+    //   console.log('totalImages', totalImages);
+    //   console.log('imgList.totalHits', imgList.totalHits);
     if (totalImages >= imgList.totalHits) {
       Notify.info(
         "We're sorry, but you've reached the end of search results."
