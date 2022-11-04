@@ -16,7 +16,7 @@ export default class MarkupService {
                 return `
            <div class="photo-card">
            <a class="card-ref" href="${e.largeImageURL}">
-            <img class="photo-img" src="${e.webformatURL}" alt="${e.tags}" loading="lazy" width = "400" height="250"/>
+            <img class="photo-img" src="${e.webformatURL}" alt="${e.tags}" loading="lazy" width = "300" height="175"/>
           </a>
           <div class="info">
             <p class="info-item">
