@@ -22,5 +22,6 @@ export async function getImage(searchQuery, page = 1) {
 
   } catch (error) {
     console.error(error);
+    throw new Error(error.massage)
   }
 }
