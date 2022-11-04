@@ -6,15 +6,22 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
 }
 
 .search-form {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background: blue;
+  background: rgb(77, 118, 241);
   text-align: center;
   gap: 20px;
+}
+input,
+button {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
 }
 .load-more {
   display: block;
